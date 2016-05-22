@@ -1,0 +1,37 @@
+#!/usr/bin/env Node
+
+'use strict'
+
+const program = require('commander')
+const path = require('path')
+
+// version of cli
+program.version('0.0.1')
+
+// help command
+program
+  .command('help')
+  .description('Show the help list!')
+  .action(() => {
+    program.outputHelp()
+  })
+  
+// init command
+program
+  .command('init [dir]')
+  .description('Create a new blog!')
+  .action(require('../lib/init'))
+
+// init command
+program
+  .command('preview')
+  .description('Preview your blog!')
+  .action(require('../lib/web'))
+  
+// deploy command
+program
+  .command('deploy')
+  .description('Deploy this blog!')
+  .action(require('../lib/output'))
+  
+program.parse(process.argv)
