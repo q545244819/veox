@@ -1,13 +1,13 @@
 {
-  "name": "vue-blog",
-  "version": "1.0.0",
-  "description": "",
+  "name": "veox",
+  "version": "0.0.1",
+  "description": "A static blog framework by Nodejs and VueJS!",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "johnhsm",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "veox": "./bin/index"
   },
