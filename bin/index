@@ -22,7 +22,7 @@ program
   .description('Create a new blog!')
   .action(require('../lib/init'))
 
-// init command
+// preview command
 program
   .command('preview')
   .description('Preview your blog!')
@@ -30,8 +30,14 @@ program
   
 // deploy command
 program
+  .command('build')
+  .description('Output this posts!')
+  .action(require('../lib/build'))
+  
+// deploy command
+program
   .command('deploy')
   .description('Deploy this blog!')
-  .action(require('../lib/output'))
+  .action(require('../lib/deploy'))
   
 program.parse(process.argv)

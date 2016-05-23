@@ -19,6 +19,7 @@
     "fs-extra": "^0.30.0",
     "markdown-it": "^6.0.2",
     "rd": "^0.0.2",
-    "serve-static": "^1.10.2"
+    "serve-static": "^1.10.2",
+    "simple-git": "^1.35.0"
   }
 }
