@@ -1,5 +1,6 @@
-var path = require('path')
-var webpack = require('webpack')
+const path = require('path')
+const webpack = require('webpack')
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 
 module.exports = {
   entry: './src/main.js',
@@ -44,7 +45,22 @@ module.exports = {
     historyApiFallback: true,
     noInfo: true
   },
-  devtool: '#eval-source-map'
+  vue: {
+    loaders: {
+      css: ExtractTextPlugin.extract(
+        "style-loader",
+        "css-loader",
+        "less-loader?sourceMap",
+        {
+          publicPath: "../dist/"
+        }
+      )
+    }
+  },
+  devtool: '#eval-source-map',
+  plugins: [
+    new ExtractTextPlugin("style.css", {allChunks: true})
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
