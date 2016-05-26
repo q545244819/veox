@@ -1,6 +1,5 @@
 <template>
   <div class="main">
-    <p>This is main</p>
     <slot></slot>
   </div>
 </template>
@@ -15,7 +14,8 @@
 
 <style lang="less" scoped>
   .main {
-    margin-left: 215px;
-    border: 1px solid blue;
+    padding: 5px 15px;
+    background: #ffffff;
+    border-radius: 3px;
   }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <sidebar></sidebar>
+    <v-header></v-header>
     <main>
       <router-view></router-view>
     </main>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-  import Sidebar from './components/Sidebar.vue'
+  import vHeader from './components/Header.vue'
   import Main from './components/Main.vue'
 
   export default {
     replace: false,
     components: {
-      Sidebar,
+      vHeader,
       Main
     }
   }
@@ -24,6 +24,11 @@
   @import './lib/css/normalize.css';
 
   body {
+    background: #DDDDDD;
     font-family: Helvetica, sans-serif;
+  }
+  #app {
+    max-width: 850px;
+    margin: 0 auto;
   }
 </style>

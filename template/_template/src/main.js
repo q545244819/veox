@@ -21,4 +21,7 @@ router.map({
     }
   },
 })
+router.redirect({
+  '*': '/articles'
+})
 router.start(App, 'body')
