@@ -22,6 +22,7 @@
 
 <style lang="less">
   @import './lib/css/normalize.css';
+  @import './lib/css/github-markdown.css';
 
   body {
     background: #DDDDDD;
