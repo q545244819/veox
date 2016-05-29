@@ -10,8 +10,11 @@
       }
     },
     ready() {
-      const params = this.$route.params
-      const path = `../../posts/${params.date}/${params.title}.html`
+      const $route = this.$route
+      const params = $route.params
+      const path = $route.path !== '/about' ? 
+        `../../posts/${params.date}/${params.title}.html` :
+        `../../posts/about.html`
       
       fetch(path)
         .then(response => {

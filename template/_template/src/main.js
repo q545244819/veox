@@ -11,7 +11,7 @@ const router = new VueRouter()
 
 router.map({
   '/articles': {
-    component: resolve => {
+    component: resolve =>   {
       require(['./components/Articles.vue'], resolve)
     }
   },
@@ -23,7 +23,7 @@ router.map({
   },
   '/about': {
     component: resolve => {
-      require(['./components/About.vue'], resolve)
+      require(['./components/Article.vue'], resolve)
     }
   },
 })
