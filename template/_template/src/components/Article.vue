@@ -1,4 +1,7 @@
 <template>
+  <h1 v-if="$route.path !== '/about'" class="title" v-text="$route.params.title"></h1>
+  <h1 v-else class="title">About Me!</h1>
+  <p v-if="$route.path !== '/about'" class="date">Article Post Time: <span v-text="$route.params.date"></span></p>
   <div class="markdown-body" v-html="html"></div>
 </template>
 
@@ -31,4 +34,13 @@
 </script>
 
 <style lang="less" scoped>
+  .title,
+  .date {
+    text-align: center;
+  }
+  
+  .date {
+    font-size: 16px;
+    color: #ccc;
+  }
 </style>

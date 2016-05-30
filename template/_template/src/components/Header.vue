@@ -45,7 +45,7 @@
         
     a {
       display: inline-block;
-      margin-right: 14px;
+      margin-left: 15px;
       text-decoration: inherit;
       font-size: 18px;
       color: #444444;

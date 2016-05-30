@@ -1,6 +1,6 @@
 <template>
   <div v-for="list in lists">
-    <h3 class="date">Date:<span v-text="$key"></span></h3>
+    <h2 class="date"><span v-text="$key"></span></h2>
     <ul class="list">
       <li v-for="item in list">
         <a v-text="item.title"
@@ -34,6 +34,10 @@
 
 <style lang="less" scoped>
   .date {
+    font-weight: inherit;
+    font-style:italic;
+    color: #333;
+    
     span {
       margin-left: 10px;
     }
