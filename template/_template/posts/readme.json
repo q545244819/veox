@@ -1,8 +1,22 @@
 {
-  "2016-05-31": [
-    {
-      "title": "Hello World!",
-      "date": "2016-05-31"
-    }
+  "posts": {
+    "2016-06-03": [
+      {
+        "title": "hello Veox!",
+        "date": "2016-06-03",
+        "url": "./posts/2016-06-03/hello Veox!.html"
+      }
+    ],
+    "2016-06-01": [
+      {
+        "title": "hello Veox!",
+        "date": "2016-06-01",
+        "url": "./posts/2016-06-01/hello Veox!.html"
+      }
+    ]
+  },
+  "dates": [
+    "2016-06-03",
+    "2016-06-01"
   ]
 }

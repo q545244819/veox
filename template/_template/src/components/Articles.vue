@@ -1,8 +1,8 @@
 <template>
-  <div v-for="list in lists">
-    <h2 class="date"><span v-text="$key"></span></h2>
+  <div v-for="list in lists.dates">
+    <h2 class="date"><span v-text="list"></span></h2>
     <ul class="list">
-      <li v-for="item in list">
+      <li v-for="item in lists.posts[list]">
         <a v-text="item.title"
            v-link="{ name: 'article', params: { date: item.date, title: item.title } }"></a>
       </li>
