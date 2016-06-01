@@ -1,0 +1,9 @@
+{
+  "git": {
+    "url": "https://git.coding.net/johnh/test.git"
+  },
+  "template": [
+    "dist",
+    "index.html"
+  ]
+}

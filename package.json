@@ -1,0 +1,26 @@
+{
+  "name": "veox",
+  "version": "0.0.1",
+  "description": "A static blog framework by Nodejs and VueJS!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "johnhsm",
+  "license": "MIT",
+  "bin": {
+    "veox": "./bin/index"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0",
+    "date-format": "^0.0.2",
+    "express": "^4.13.4",
+    "fs-extra": "^0.30.0",
+    "lodash": "^4.13.1",
+    "markdown-it": "^6.0.2",
+    "rd": "^0.0.2",
+    "serve-static": "^1.10.2",
+    "simple-git": "^1.35.0"
+  }
+}
