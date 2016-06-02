@@ -25,7 +25,7 @@ If your have installed above things,then,you can run:
 npm install -g veox
 ```
 
-> You can use [cnpm](https://npm.taobao.org/) to install this package, IF you are China😊!
+> You can use [cnpm](https://npm.taobao.org/) to install this package, if you are in China😊!
 
 ## Config
 
