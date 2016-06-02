@@ -19,7 +19,7 @@ Before you install `veox`,you need some things:
  - [NodeJS](https://nodejs.org/en/)
  - [Git](https://git-scm.com/downloads)
  
-If your have installed above things,then you can run:
+If your have installed above things,then,you can run:
 
 ```
 npm install -g veox
@@ -46,19 +46,19 @@ You can modify `config.json` in your project of veox.
 
 ## Build
 
-In your project of `veox`,It have a folder named _posts.It is your folders of some actices.
+In your project of `veox`,it have a folder named _posts.It is your folders of some actices.
 
-If you want to build your blog,You can run:
+If you want to build your blog,you can run:
 
 ```
 veox build
 ```
 
-Then,it will create a file named deploy,If you have not this folder before!It parses your `.md` file and outputs `.html` file.
+Then,it will create a file named deploy,if you have not this folder before!It will be parsesing your `.md` file and outputs `.html` file.
 
 ## Deploy
 
-If you already run build Command,Then,You can deploy your project!
+If you already run build Command,then,you can deploy your project!
 
 ```
 veox deploy
@@ -70,13 +70,13 @@ It will be copying your template code to folder named deploy.
 
 ## Preview
 
-In the end, you already build and deploy,Then,you can run:
+In the end,you already build and deploy,then,you can run:
 
 ```
 veox preview
 ```
 
-If your cli output a line,It is means what you can visit By address,Then,you can input address in your address bar of browsers!
+If your cli output a line,It means what you can visit your porject by the address,then,you can input address in your address bar of browsers!
 
 ## License
 
