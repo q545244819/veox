@@ -4,7 +4,7 @@
     <main>
       <router-view></router-view>
     </main>
-    <p class="footer">Power By Veox, This souce of blog in <a href="" target="_blank">here</a>!</p>
+    <p class="footer">Power By Veox, This souce of blog in <a href="https://github.com/q545244819/veox" target="_blank">here</a>!</p>
   </div>
 </template>
 
@@ -34,9 +34,8 @@
     -moz-osx-font-smoothing: grayscale;
   }
   #app {
-    box-sizing: border-box;
-    padding: 0 10px;
-    max-width: 850px;
+    max-width: 830px;
+    padding: 0 10px;    
     margin: 0 auto;
   }
 </style>

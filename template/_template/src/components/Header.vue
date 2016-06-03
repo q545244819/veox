@@ -19,6 +19,12 @@
 </script>
 
 <style lang="less" scoped>
+  @media screen and (max-width:365px) {
+	  .navbar a:first-child { 
+      display: none;
+    }
+  }
+
   .header {
     overflow: hidden;
     margin: 25px 0;
