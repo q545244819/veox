@@ -2,6 +2,10 @@
 
 This is a static blog framework by Nodejs and VueJS!🚀🚀🚀
 
+[![node](https://img.shields.io/badge/node-4.x-green.svg)]()
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)]()
+[![CocoaPods](https://img.shields.io/cocoapods/l/AFNetworking.svg?maxAge=2592000)]()
+
 ## Usage
 
 ```
