@@ -1,0 +1,15 @@
+{
+  "posts": {
+    "2016-06-01": [
+      {
+        "title": "hello Veox!",
+        "date": "2016-06-01",
+        "tag": "JavaScript",
+        "url": "./posts/2016-06-01/hello Veox!.html"
+      }
+    ]
+  },
+  "dates": [
+    "2016-06-01"
+  ]
+}
