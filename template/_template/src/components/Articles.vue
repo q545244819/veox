@@ -24,7 +24,7 @@
       const params = this.$route.params
       let url = ''
       
-      if (params) {
+      if (params.tag) {
         url = `../../tags/${params.tag}.json`
       } else {
         url = '../../posts/readme.json'
