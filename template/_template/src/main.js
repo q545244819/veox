@@ -24,7 +24,13 @@ router.map({
       require(['./components/Articles.vue'], resolve)
     }
   },
-  '/article/:date/:title': {
+  '/articles/:tag': {
+    name: 'articles',
+    component: resolve => {
+      require(['./components/Articles.vue'], resolve)
+    }
+  },
+  '/article/:date/:tag/:title': {
     name: 'article',
     component: resolve => {
       require(['./components/Article.vue'], resolve)

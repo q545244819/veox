@@ -1,7 +1,12 @@
 <template>
   <h1 v-if="$route.path !== '/about'" class="title" v-text="$route.params.title"></h1>
   <h1 v-else class="title">About Me!</h1>
-  <p v-if="$route.path !== '/about'" class="date">Article Post Time: <span v-text="$route.params.date"></span></p>
+  <p v-if="$route.path !== '/about'" class="date">
+    Article Post Time: 
+    <span v-text="$route.params.date"></span>
+    tag:
+    <span v-text="$route.params.tag"></span>
+  </p>
   <div class="markdown-body" v-html="html"></div>
   <duoshuo :key="$route.params.title"
            :title="$route.params.title"
