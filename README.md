@@ -80,6 +80,21 @@ In the end,you already build and deploy,then,you can run:
 veox preview
 ```
 
+## About your MarkDown file!
+
+Veox wants to know your articles title, date and tag.you must add some infomations to your markdown file:
+
+```markdown
+---
+title: This is your title of article!
+date: 2016-01-01
+tag: hello
+---
+```
+ - title: your title of article
+ - date: format must is '20XX-XX-XX'
+ - tag: your tag of article, Only one tag!
+
 If your cli output a line,It means what you can visit your porject by the address,then,you can input address in your address bar of browsers!
 
 ## License
