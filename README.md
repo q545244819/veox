@@ -95,8 +95,6 @@ tag: hello
  - date: format must is '20XX-XX-XX'
  - tag: your tag of article, Only one tag!
 
-If your cli output a line,It means what you can visit your porject by the address,then,you can input address in your address bar of browsers!
-
 ## License
 
 [http://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
