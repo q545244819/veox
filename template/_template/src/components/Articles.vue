@@ -20,26 +20,30 @@
         lists: {}
       }
     },
-    ready() {
-      const params = this.$route.params
-      let url = ''
-      
-      if (params.tag) {
-        url = `../../tags/${params.tag}.json`
-      } else {
-        url = '../../posts/readme.json'
+    route: {
+      data(transition) {
+        const params = this.$route.params
+        let url = ''
+        
+        if (params.tag) {
+          url = `../../tags/${params.tag}.json`
+        } else {
+          url = '../../posts/readme.json'
+        }
+
+        fetch(url)
+          .then(response => {
+            return response.json()
+          })
+          .then(lists => {
+            this.lists = lists
+          })
+          .catch(err => {
+            console.error(err)
+          })
+
+        transition.next();
       }
-      
-      fetch(url)
-        .then(response => {
-          return response.json()
-        })
-        .then(lists => {
-          this.lists = lists
-        })
-        .catch(err => {
-          console.error(err)
-        })
     }
   }
 </script>
