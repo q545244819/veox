@@ -1,6 +1,6 @@
 {
   "name": "veox",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "A static blog framework by Nodejs and VueJS!",
   "main": "index.js",
   "email": "johnhsm2333@gmail.com",
