@@ -1,6 +1,7 @@
 ---
 title: hello Veox!
 date: 2016-06-01
+tag: demo
 ---
 
 # hello Veox!
