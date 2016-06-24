@@ -5,7 +5,7 @@
       <li v-for="item in lists.posts[list]">
         <a v-text="item.title"
            v-link="{ name: 'article', params: { date: item.date, title: item.title, tag: item.tag } }"></a>
-        <a class="tag" 
+        <a class="tag"
            v-text="item.tag"
            v-link="{ name: 'articles', params: { tag: item.tag } }"></a>
       </li>
@@ -24,7 +24,7 @@
       data(transition) {
         const params = this.$route.params
         let url = ''
-        
+
         if (params.tag) {
           url = `../../tags/${params.tag}.json`
         } else {
@@ -64,7 +64,7 @@
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
-    
+
     &:hover {
       color: #fff;
     }
@@ -74,7 +74,7 @@
     font-weight: inherit;
     font-style:italic;
     color: #333;
-    
+
     span {
       margin-left: 10px;
     }
@@ -85,20 +85,20 @@
       font-size: 18px;
       line-height: 2;
     }
-    
+
     a {
       color: #444444;
       text-decoration: initial;
-      
+
       &:hover {
         color: #003399;
         text-decoration: underline;
       }
     }
-    
+
     .tag {
       cursor: pointer;
-      
+
       .tag(@primary_color);
     }
   }
